@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" modified="2020-09-06T08:55:32.233Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.206" etag="QmXpeklGElrK7p_1yo9h" version="13.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-06T10:04:56.649Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 OPR/68.0.3618.206" etag="dtY_dZ_TTh3nEorxk-Zo" version="13.6.6" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="419" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2302" dy="1337" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="jqg6925mHtoc8dUM1S4J-75" value="" style="shape=or;whiteSpace=wrap;html=1;fontSize=14;align=center;labelBackgroundColor=none;labelBorderColor=none;noLabel=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="790" width="1240" height="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-78" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;align=center;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="90" y="1140" width="1100" height="430" as="geometry" />
+        </mxCell>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="205" y="90" as="targetPoint" />
@@ -57,8 +63,8 @@
         <mxCell id="jqg6925mHtoc8dUM1S4J-9" value="RGBTRIPLE &lt;i&gt;oldvalues&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="360" y="350" width="110" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="jqg6925mHtoc8dUM1S4J-11" value="double for loop with i/j = 1 up to height/width + 1,&lt;br&gt;one row and col on each end will not be satured and == 0" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=12;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="520" y="340" width="220" height="120" as="geometry" />
+        <mxCell id="jqg6925mHtoc8dUM1S4J-11" value="RGBTRIPLE &lt;i&gt;oldvalues&lt;/i&gt;[height + 2][width + 2];&lt;br&gt;&lt;br&gt;for (int i = 1; i &amp;lt; height + 1; i++)&lt;br&gt;{&lt;br&gt;&amp;nbsp; &amp;nbsp; for (int j = 1; i &amp;lt; width + 1; j++)&lt;br&gt;&amp;nbsp; &amp;nbsp; {" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=12;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="340" width="340" height="120" as="geometry" />
         </mxCell>
         <mxCell id="jqg6925mHtoc8dUM1S4J-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-15" target="jqg6925mHtoc8dUM1S4J-17">
           <mxGeometry relative="1" as="geometry" />
@@ -74,11 +80,128 @@
         <mxCell id="jqg6925mHtoc8dUM1S4J-17" value="double &lt;i&gt;GxRed, GxGrn, GxBlu;&lt;/i&gt;&lt;br&gt;double &lt;i&gt;GyRed, GyGrn, GyBlu;&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=12;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="360" y="460" width="250" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="jqg6925mHtoc8dUM1S4J-19" value="double to calculate each pixel in the grid" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+        <mxCell id="jqg6925mHtoc8dUM1S4J-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-19" target="jqg6925mHtoc8dUM1S4J-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-19" target="jqg6925mHtoc8dUM1S4J-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-19" value="double for-loop to calculate each pixel in the grid" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="107.5" y="680" width="215" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="jqg6925mHtoc8dUM1S4J-22" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;Specifying each pixel&lt;/b&gt;&lt;/div&gt;&lt;br&gt;for (int i = 0; i &amp;lt; height; i++)&lt;br&gt;&amp;nbsp; &amp;nbsp; for (int j = 0; j &amp;lt; width; j++)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="429" y="705" width="190" height="65" as="geometry" />
+        <mxCell id="jqg6925mHtoc8dUM1S4J-22" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;b&gt;Specifying each pixel&lt;/b&gt;&lt;/div&gt;&lt;br&gt;for (int i = 0; i &amp;lt; height; i++)&lt;br&gt;{&lt;br&gt;&amp;nbsp; &amp;nbsp; for (int j = 0; j &amp;lt; width; j++)&lt;br&gt;&amp;nbsp; &amp;nbsp; { ..." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="429" y="691.25" width="190" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-24" target="jqg6925mHtoc8dUM1S4J-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-24" target="jqg6925mHtoc8dUM1S4J-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-24" value="Zeroing down variables, that need to be == 0 for each pixel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="155" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-26" value="&lt;br&gt;GxRed &lt;span style=&quot;font-style: normal&quot;&gt;= &lt;/span&gt;GxGrn &lt;span style=&quot;font-style: normal&quot;&gt;= &lt;/span&gt;GxBlu&amp;nbsp;&lt;span style=&quot;font-style: normal&quot;&gt;&amp;nbsp;= &lt;/span&gt;GyRed &lt;span style=&quot;font-style: normal&quot;&gt;= &lt;/span&gt;GyGrn &lt;span style=&quot;font-style: normal&quot;&gt;= &lt;/span&gt;GyBlu &lt;span style=&quot;font-style: normal&quot;&gt;= 0&lt;br&gt;int &lt;/span&gt;cc = &lt;span style=&quot;font-style: normal&quot;&gt;0&lt;/span&gt;" style="rhombus;whiteSpace=wrap;html=1;fontSize=11;align=center;fontStyle=2;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="379" y="850" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-28" target="jqg6925mHtoc8dUM1S4J-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-28" target="jqg6925mHtoc8dUM1S4J-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-28" value="Another double for- loop to create a 9x9 array around each pixel" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="127.5" y="1010" width="185" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-31" value="for (int a = -1;&amp;nbsp; a &amp;lt; 2; a++)&lt;br&gt;{&lt;br&gt;&amp;nbsp; &amp;nbsp; for (int b = -1; b &amp;lt; 2; b++)&lt;br&gt;&amp;nbsp; &amp;nbsp; {" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="1015" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-33" target="jqg6925mHtoc8dUM1S4J-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-33" value="loops go from - 1 to 1, because they represent row and col around the current pixel&lt;br&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="680" y="935" width="160" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-40" target="jqg6925mHtoc8dUM1S4J-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-40" target="jqg6925mHtoc8dUM1S4J-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-40" value="Getting the old value for the current 9x9 gridpixel" style="whiteSpace=wrap;html=1;rounded=0;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="130" y="1160" width="180" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-45" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-42" target="jqg6925mHtoc8dUM1S4J-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-42" value="int &lt;i&gt;ovred&lt;/i&gt;&lt;br&gt;int ovgrn&lt;br&gt;int &lt;i&gt;ovblu&lt;/i&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=13;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="440" y="1152.5" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-44" value="&lt;i&gt;ovred &lt;/i&gt;= &lt;i&gt;oldvalues&lt;/i&gt;[i + 1 + a][j + 1 + b].rgbtRed&lt;br&gt;&lt;i&gt;ovgrn &lt;/i&gt;= &lt;i&gt;oldvalues&lt;/i&gt;[i + 1 + a][i + 1 + b].rgbtGreen&lt;br&gt;&lt;i&gt;ovblu = oldvalues&lt;/i&gt;[i + 1 + a][j + 1 + b].rgbtBlue&lt;br&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="670" y="1162.5" width="300" height="57.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-47" target="jqg6925mHtoc8dUM1S4J-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-47" value="&lt;b&gt;&amp;gt;i/j + 1&amp;lt; &lt;/b&gt;because the &lt;i&gt;oldvalues&lt;/i&gt;&amp;nbsp;grid has one more row and col on each end" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="660" y="1260" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-49" target="jqg6925mHtoc8dUM1S4J-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-49" value="+a/b &lt;span style=&quot;font-weight: normal&quot;&gt;because we want each value of the 9x9 grid around the current pixel, so one row/col back, same row/col and 1 row/col further&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;fontSize=11;align=center;fontStyle=1" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="840" y="1260" width="180" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-51" target="jqg6925mHtoc8dUM1S4J-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-59" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-51" target="jqg6925mHtoc8dUM1S4J-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-51" value="Updating the &lt;i style=&quot;font-size: 13px;&quot;&gt;Gx/Gy &lt;/i&gt;color values" style="rounded=0;whiteSpace=wrap;html=1;fontSize=13;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="145" y="1340" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-56" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-55" target="jqg6925mHtoc8dUM1S4J-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-53" value="&lt;i&gt;GxRed&lt;/i&gt;&amp;nbsp;+= &lt;i&gt;ovred &lt;/i&gt;* &lt;i&gt;Gxarr&lt;/i&gt;[&lt;i&gt;cc]&lt;br&gt;&lt;/i&gt;&lt;i&gt;GyRed &lt;/i&gt;+=&amp;nbsp;&lt;i&gt;ovred &lt;/i&gt;* &lt;i&gt;Gyarr&lt;/i&gt;[&lt;i&gt;cc&lt;/i&gt;]&lt;br&gt;...&lt;br&gt;&lt;br&gt;&lt;i&gt;cc &lt;/i&gt;+= 1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;fontSize=13;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="420" y="1380" width="220" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-55" value="Gx/Gyvalues are sums of themselves + the ovalue * the arrayvalue&lt;br&gt;&lt;br&gt;cc counts up through the 9x9 grid" style="ellipse;whiteSpace=wrap;html=1;fontSize=13;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="700" y="1400" width="190" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-61" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-58" target="jqg6925mHtoc8dUM1S4J-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-65" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-58" target="jqg6925mHtoc8dUM1S4J-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-58" value="Putting the Gx and Gy values together to get a single value for each color." style="whiteSpace=wrap;html=1;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="122.5" y="1610" width="195" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-62" target="jqg6925mHtoc8dUM1S4J-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-60" value="GRed = round(sqrt(pow(GxRed, 2) + pow(GyRed, 2)))&lt;br&gt;..." style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;fontSize=11;align=left;verticalAlign=top;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="435" y="1660" width="335" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-62" value="Formula to bring the Values together and unite them." style="ellipse;whiteSpace=wrap;html=1;rounded=0;fontSize=14;align=center;verticalAlign=middle;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="630" y="1740" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-67" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-64" target="jqg6925mHtoc8dUM1S4J-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-69" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="jqg6925mHtoc8dUM1S4J-64" target="jqg6925mHtoc8dUM1S4J-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-64" value="Check if the color values are &amp;gt; 255 and tune them down to 255" style="whiteSpace=wrap;html=1;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="105.63" y="1800" width="228.75" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-66" value="lightcheck(value)" style="rhombus;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=2" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="440" y="1790" width="150.01" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jqg6925mHtoc8dUM1S4J-68" value="putting the calculated values into the output image." style="whiteSpace=wrap;html=1;rounded=0;fontSize=14;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="115" y="1960" width="210" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
